@@ -7,8 +7,8 @@
 <include>
 <uri>model://ground_plane</uri>
 </include>
-<include>
+<!-- <include>
 <uri>model://Maze101</uri>
-</include>
+</include> -->
 </world>
 </sdf>

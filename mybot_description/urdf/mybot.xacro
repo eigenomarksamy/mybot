@@ -44,7 +44,7 @@
     <geometry> 
       <box size="${chassisLength} ${chassisWidth} ${chassisHeight}"/> 
     </geometry> 
-    <material name="orange"/>
+    <material name="blue"/>
   </visual>
   <inertial> 
     <origin xyz="0 0 ${wheelRadius}" rpy="0 0 0"/> 
@@ -86,7 +86,7 @@
 </link>
 <wheel lr="left" tY="1"/>
 <wheel lr="right" tY="-1"/>
-<joint name="camera_joint" type="continuous">
+<!-- <joint name="camera_joint" type="continuous">
   <parent link="chassis"/>
   <child link="camera"/>
 <origin xyz="${chassisLength/2} ${chassisWidth/2} ${chassisHeight}" rpy="0 0 0" />
@@ -115,7 +115,7 @@
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
   </inertial>
-</link>
+</link> -->
 <joint name="imu_joint" type="continuous">
   <parent link="chassis"/>
   <child link="imu"/>
